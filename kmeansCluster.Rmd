@@ -1,7 +1,7 @@
 ---
 title: "kmeans eample"
-author: "MGMT6770"
-date: "11/12/2019"
+author: "Jacky/Dottie Maya"
+date: "12/6/2019"
 output: 
   html_document:
     toc: true
@@ -47,7 +47,7 @@ df=na.omit(df)
 
 As with the neural net, we don't want the result to depend on the units selected
 
-```{r}mid
+```{r scaling, include=FALSE}
 df = scale(df)
 head(df)
 ```
@@ -138,10 +138,3 @@ for (i in 1:nObs){
 
 xtabs(~dni3[[3]][final$cluster] + df_all[,5])
 ```
-
-
-
-
-
-
-Find the 50 most likely transactions to investigate?
